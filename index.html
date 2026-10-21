@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hariprakash — Fashion Communication & Visual Direction</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="theme-white">
+
+
+  <!-- Subtle Paper Grain -->
+  <div class="grain-overlay"></div>
+
+  <!-- Top Navigation Bar: Minimalist Editorial Header -->
+  <header class="header">
+    <div class="header-left">
+      <a href="#hero" class="brand-link" data-cursor="HOME">
+        <span class="brand-name">HARIPRAKASH</span>
+      </a>
+    </div>
+
+    <nav class="header-nav" id="headerNav">
+      <a href="#hero" class="nav-link active">Home</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#contact" class="nav-link">Contact</a>
+      <a href="about.html" class="nav-link">About</a>
+    </nav>
+
+    <div class="header-right">
+      <a href="assets/Hariprakash_Resume.pdf" download="Hariprakash_Resume.pdf" class="resume-download-btn" id="resumeDownloadBtn" data-cursor="DOWNLOAD">
+        <span class="resume-btn-label">Resume</span>
+        <svg class="resume-btn-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="7 10 12 15 17 10"></polyline>
+          <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <!-- Main View Container -->
+  <main id="mainContent">
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="section hero-section" id="hero">
+      <div class="hero-reference-grid">
+        
+        <!-- Left Column: 3D Layered Crimson Portrait & Location Caption -->
+        <div class="hero-image-col">
+          <div class="portrait-3d-wrapper" id="portrait3dWrapper">
+            <div class="portrait-stage portrait-rounded-card" id="heroPortraitCard" data-cursor="HARI">
+              <div class="portrait-royal-box" id="heroPortraitRoyalBox">
+                <div class="portrait-glare" id="portraitGlare"></div>
+              </div>
+              <img src="assets/hari-portrait-trimmed.png" alt="Hariprakash - Fashion Communication Student at NIFT Kannur" class="portrait-photo portrait-popout-photo" id="heroPortraitImg">
+              <input type="file" id="portraitFileInput" accept="image/*" style="display: none;">
+            </div>
+            <div class="portrait-location-caption"></div>
+          </div>
+        </div>
+
+        <!-- Right Column: Typography Hierarchy & Bio (Left Aligned) -->
+        <div class="hero-content-col">
+          <div class="hero-greeting">Hi</div>
+          
+          <h1 class="hero-giant-name">I'm Hariprakash</h1>
+          
+          <div class="hero-roles-primary">
+            Fashion Communication student at NIFT Kannur
+          </div>
+          
+          <p class="hero-statement-text">
+            Exploring 3D worlds, collecting forgotten tech, and creating visual stories.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section class="section projects-section" id="projects">
+      <div class="projects-section-header">
+        <div class="projects-header-inner">
+          <h2 class="projects-heading">Projects</h2>
+        </div>
+      </div>
+
+      <!-- STREAM VIEW (4x4 Grid in AFTER US! Signature Style) -->
+      <div class="view-container stream-view active" id="streamView">
+        <div class="grid-section">
+          <div class="projects-grid-4x4">
+
+          <!-- 01: AFTER US!/____ -->
+          <article class="grid-card" data-cursor="EXPLORE" onclick="openProjectModal('249047443')">
+            <div class="card-media-box kinetic-media-box">
+              <div class="kinetic-inner">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/176cf6249047443.69ff07a0c9849.jpg" alt="AFTER US!/____" class="entry-img zoom-on-hover">
+              </div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">AFTER US!/____</h3>
+              <span class="card-category">3D ART & WORLDBUILDING</span>
+              <p class="card-statement">Reimagining my college campus (NIFT Kannur) as a quiet, decaying world after an apocalypse.</p>
+            </div>
+          </article>
+
+          <!-- 02: EZHAKAL: CRAFT RESEARCH DOCUMENTATION -->
+          <article class="grid-card" data-cursor="EXPLORE" onclick="openProjectModal('248585813')">
+            <div class="card-media-box kinetic-media-box">
+              <div class="kinetic-inner">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/36e173248585813.69f4a077e0290.png" alt="Ezhakal Handloom" class="entry-img zoom-on-hover">
+              </div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">EZHAKAL: CRAFT RESEARCH</h3>
+              <span class="card-category">HERITAGE HANDLOOM DOCUMENTARY</span>
+              <p class="card-statement">A collaborative NIFT research book and documentary on traditional Kerala handloom weaving at Paravur.</p>
+            </div>
+          </article>
+
+          <!-- 03: NANGELI: VISUAL STORYTELLING -->
+          <article class="grid-card" data-cursor="EXPLORE" onclick="openProjectModal('249169795')">
+            <div class="card-media-box kinetic-media-box">
+              <div class="kinetic-inner">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/2de1ac249169795.6a0213ae87fff.jpg" alt="Nangeli Visual Storytelling" class="entry-img zoom-on-hover">
+              </div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">NANGELI</h3>
+              <span class="card-category">FASHION CULTURE & VISUAL STORYTELLING</span>
+              <p class="card-statement">A visual storytelling project inspired by the historical resistance of Nangeli through traditional handloom and natural light.</p>
+            </div>
+          </article>
+
+          <!-- 04: SOMEWHERE BETWEEN US (SHORT FILM) -->
+          <article class="grid-card" data-cursor="EXPLORE" onclick="openProjectModal('256784861')">
+            <div class="card-media-box kinetic-media-box">
+              <div class="kinetic-inner">
+                <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808/34bed5256784861.6acb84158bdbe.jpg" alt="Somewhere Between Us" class="entry-img zoom-on-hover">
+              </div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">SOMEWHERE BETWEEN US</h3>
+              <span class="card-category">SHORT FILM & DIRECTION</span>
+              <p class="card-statement">A late-night mystery time-loop short film made on a 5-day deadline with a ₹2,500 budget.</p>
+            </div>
+          </article>
+
+          <!-- 05: ZENZA BRONICA GS-1 — 3D VISUALIZATION -->
+          <article class="grid-card" data-cursor="EXPLORE" onclick="openProjectModal('246316057')">
+            <div class="card-media-box kinetic-media-box">
+              <div class="kinetic-inner">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/ccaa19246316057.69c4a37d3e76d.jpg" alt="Zenza Bronica GS-1" class="entry-img zoom-on-hover">
+              </div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">ZENZA BRONICA GS-1</h3>
+              <span class="card-category">3D HARD-SURFACE MODELING</span>
+              <p class="card-statement">A precision 3D model of the classic 1980s Japanese medium-format film camera.</p>
+            </div>
+          </article>
+
+          <!-- 06: NOT YOUR TYPICAL REINCARNATION STORY: SET DESIGN -->
+          <article class="grid-card" data-cursor="EXPLORE" onclick="openProjectModal('257265487')">
+            <div class="card-media-box kinetic-media-box">
+              <div class="kinetic-inner">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/61393c257265487.6ad4afed2b87b.png" alt="Set Design" class="entry-img zoom-on-hover">
+              </div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">REINCARNATION SET DESIGN</h3>
+              <span class="card-category">PRODUCTION SET DESIGN</span>
+              <p class="card-statement">Complete 3D film set design, floor blueprints, and mood lighting created for a narrative movie.</p>
+            </div>
+          </article>
+
+          <!-- 07: LEVI'S BRAND VISUAL STUDY -->
+          <article class="grid-card" data-cursor="EXPLORE" onclick="openProjectModal('247858221')">
+            <div class="card-media-box kinetic-media-box">
+              <div class="kinetic-inner">
+                <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808/e565d1247858221.69e4e2048e637.jpg" alt="Levi's Study" class="entry-img zoom-on-hover">
+              </div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">LEVI'S BRAND VISUAL STUDY</h3>
+              <span class="card-category">FASHION BRANDING & ANALYSIS</span>
+              <p class="card-statement">An editorial brand study looking closely at Levi's denim culture, copper rivets, and heritage typography.</p>
+            </div>
+          </article>
+
+          <!-- 08: 3D VISUALISATION OF FILM CAMERA -->
+          <article class="grid-card" data-cursor="EXPLORE" onclick="openProjectModal('247894319')">
+            <div class="card-media-box kinetic-media-box">
+              <div class="kinetic-inner">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/4368d0247894319.69e5b591130b4.jpg" alt="3D Film Camera" class="entry-img zoom-on-hover">
+              </div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">3D FILM CAMERA</h3>
+              <span class="card-category">3D MODELING & VISUALIZATION</span>
+              <p class="card-statement">A 3D modeling study exploring vintage 35mm mechanical cameras, glass lenses, and studio lighting.</p>
+            </div>
+          </article>
+
+          <!-- 09: ANIMATING THE GODDESS SARASWATI -->
+          <article class="grid-card" data-cursor="EXPLORE" onclick="openProjectModal('246845579')">
+            <div class="card-media-box kinetic-media-box">
+              <div class="kinetic-inner">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/c03140246845579.69cf36661ecff.jpeg" alt="Animating Saraswati" class="entry-img zoom-on-hover">
+              </div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">ANIMATING SARASWATI</h3>
+              <span class="card-category">MECHANICAL KINETIC ART</span>
+              <p class="card-statement">A moving mechanical shadow box turning Raja Ravi Varma's Goddess Saraswati painting into kinetic art.</p>
+            </div>
+          </article>
+
+          <!-- 10: PERFUME STORE -->
+          <article class="grid-card" data-cursor="EXPLORE" onclick="openProjectModal('246182939')">
+            <div class="card-media-box kinetic-media-box">
+              <div class="kinetic-inner">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/52ec3e246182939.69be59ce786f8.jpg" alt="Perfume Store" class="entry-img zoom-on-hover">
+              </div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">PERFUME STORE</h3>
+              <span class="card-category">SPATIAL DESIGN & 3D INTERIORS</span>
+              <p class="card-statement">A minimalist luxury perfume store designed with floating glass shelves, stone counters, and warm lighting.</p>
+            </div>
+          </article>
+
+          <!-- 11: GRADUATION PROJECT SHOWCASE 2026 -->
+          <article class="grid-card" data-cursor="EXPLORE" onclick="openProjectModal('247354035')">
+            <div class="card-media-box kinetic-media-box">
+              <div class="kinetic-inner">
+                <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/18b81d247354035.Y3JvcCwxMzgwLDEwODAsMjcwLDA.png" alt="Graduation Showcase" class="entry-img zoom-on-hover">
+              </div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">GRADUATION SHOWCASE 2026</h3>
+              <span class="card-category">EDITORIAL CURATION & IDENTITY</span>
+              <p class="card-statement">Complete visual identity, posters, and exhibition catalogue designed for NIFT Kannur's graduation showcase.</p>
+            </div>
+          </article>
+
+          <!-- 12: WINDUP CLOCK IN 3D -->
+          <article class="grid-card" data-cursor="EXPLORE" onclick="openProjectModal('205525637')">
+            <div class="card-media-box kinetic-media-box">
+              <div class="kinetic-inner">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs_webp/4d4110205525637.66bc848f876ca.jpg" alt="Windup Clock" class="entry-img zoom-on-hover">
+              </div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">WINDUP CLOCK IN 3D</h3>
+              <span class="card-category">3D ASSET MODELING & TEXTURING</span>
+              <p class="card-statement">A detailed 3D model of a vintage mechanical alarm clock with twin bells and winding keys.</p>
+            </div>
+          </article>
+
+          <!-- 13: KERALA ARCHIVE -->
+          <article class="grid-card" data-cursor="EXPLORE" onclick="openProjectModal('102717997')">
+            <div class="card-media-box kinetic-media-box">
+              <div class="kinetic-inner">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200_webp/eacad1102717997.5f3cfc735d7a6.jpg" alt="Kerala Archive" class="entry-img zoom-on-hover">
+              </div>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">KERALA ARCHIVE</h3>
+              <span class="card-category">DOCUMENTARY PHOTOGRAPHY</span>
+              <p class="card-statement">A personal photography series capturing coastal backwaters, morning light, and daily life in Kerala.</p>
+            </div>
+          </article>
+
+        </div>
+      </div><!-- End Grid Section -->
+
+    </div><!-- End Stream View -->
+
+
+    <!-- ==================== INDEX VIEW (Swiss Catalog) ==================== -->
+    <div class="view-container index-view" id="indexView">
+      <div class="index-header-row">
+        <span class="idx-col idx-no">NO.</span>
+        <span class="idx-col idx-title">PROJECT SPECIMEN</span>
+        <span class="idx-col idx-disc">DISCIPLINE</span>
+        <span class="idx-col idx-client">CONTEXT</span>
+        <span class="idx-col idx-year">YEAR</span>
+        <span class="idx-col idx-action">CASE STUDY</span>
+      </div>
+
+      <div class="index-table">
+        <div class="index-row" data-preview="https://mir-s3-cdn-cf.behance.net/project_modules/1400/176cf6249047443.69ff07a0c9849.jpg" onclick="openProjectModal('249047443')">
+          <span class="idx-col idx-no">01</span>
+          <span class="idx-col idx-title"><strong>AFTER US!/____</strong></span>
+          <span class="idx-col idx-disc">3D Art & Speculative Worldbuilding</span>
+          <span class="idx-col idx-client">Independent Monograph</span>
+          <span class="idx-col idx-year">2026</span>
+          <span class="idx-col idx-action">EXPLORE ↗</span>
+        </div>
+
+        <div class="index-row" data-preview="https://mir-s3-cdn-cf.behance.net/project_modules/1400/36e173248585813.69f4a077e0290.png" onclick="openProjectModal('248585813')">
+          <span class="idx-col idx-no">02</span>
+          <span class="idx-col idx-title"><strong>EZHAKAL: CRAFT RESEARCH</strong></span>
+          <span class="idx-col idx-disc">Handloom Documentary & Monograph</span>
+          <span class="idx-col idx-client">NIFT Kannur / Paravur Society</span>
+          <span class="idx-col idx-year">2025</span>
+          <span class="idx-col idx-action">EXPLORE ↗</span>
+        </div>
+
+        <div class="index-row" data-preview="https://mir-s3-cdn-cf.behance.net/project_modules/1400_webp/2de1ac249169795.6a0213ae87fff.jpg" onclick="openProjectModal('249169795')">
+          <span class="idx-col idx-no">03</span>
+          <span class="idx-col idx-title"><strong>NANGELI</strong></span>
+          <span class="idx-col idx-disc">Fashion Culture & Visual Storytelling</span>
+          <span class="idx-col idx-client">NIFT Kannur</span>
+          <span class="idx-col idx-year">2026</span>
+          <span class="idx-col idx-action">EXPLORE ↗</span>
+        </div>
+
+        <div class="index-row" data-preview="https://mir-s3-cdn-cf.behance.net/projects/max_808/34bed5256784861.6acb84158bdbe.jpg" onclick="openProjectModal('256784861')">
+          <span class="idx-col idx-no">04</span>
+          <span class="idx-col idx-title"><strong>SOMEWHERE BETWEEN US</strong></span>
+          <span class="idx-col idx-disc">Moving Images, Cinematography & Direction</span>
+          <span class="idx-col idx-client">Narrative Film Assignment</span>
+          <span class="idx-col idx-year">2025</span>
+          <span class="idx-col idx-action">EXPLORE ↗</span>
+        </div>
+
+        <div class="index-row" data-preview="https://mir-s3-cdn-cf.behance.net/project_modules/1400/ccaa19246316057.69c4a37d3e76d.jpg" onclick="openProjectModal('246316057')">
+          <span class="idx-col idx-no">05</span>
+          <span class="idx-col idx-title"><strong>ZENZA BRONICA GS-1</strong></span>
+          <span class="idx-col idx-disc">3D Hard-Surface Modeling</span>
+          <span class="idx-col idx-client">Camera Archaeology Study</span>
+          <span class="idx-col idx-year">2025</span>
+          <span class="idx-col idx-action">EXPLORE ↗</span>
+        </div>
+
+        <div class="index-row" data-preview="https://mir-s3-cdn-cf.behance.net/project_modules/1400/61393c257265487.6ad4afed2b87b.png" onclick="openProjectModal('257265487')">
+          <span class="idx-col idx-no">06</span>
+          <span class="idx-col idx-title"><strong>REINCARNATION SET DESIGN</strong></span>
+          <span class="idx-col idx-disc">Production Set Design & Worldbuilding</span>
+          <span class="idx-col idx-client">Film Production Study</span>
+          <span class="idx-col idx-year">2025</span>
+          <span class="idx-col idx-action">EXPLORE ↗</span>
+        </div>
+
+        <div class="index-row" data-preview="https://mir-s3-cdn-cf.behance.net/projects/max_808/e565d1247858221.69e4e2048e637.jpg" onclick="openProjectModal('247858221')">
+          <span class="idx-col idx-no">07</span>
+          <span class="idx-col idx-title"><strong>LEVI'S BRAND VISUAL STUDY</strong></span>
+          <span class="idx-col idx-disc">Fashion Branding & Communication</span>
+          <span class="idx-col idx-client">Brand Identity Analysis</span>
+          <span class="idx-col idx-year">2024</span>
+          <span class="idx-col idx-action">EXPLORE ↗</span>
+        </div>
+
+        <div class="index-row" data-preview="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/ef3e74247894319.69e5e164a9bde.jpg" onclick="openProjectModal('247894319')">
+          <span class="idx-col idx-no">08</span>
+          <span class="idx-col idx-title"><strong>3D FILM CAMERA</strong></span>
+          <span class="idx-col idx-disc">Camera Optics & 3D Shading</span>
+          <span class="idx-col idx-client">3D Mechanical Study</span>
+          <span class="idx-col idx-year">2024</span>
+          <span class="idx-col idx-action">EXPLORE ↗</span>
+        </div>
+
+        <div class="index-row" data-preview="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/fe1760246845579.Y3JvcCw1MTEzLDQwMDAsNDQzLDA.png" onclick="openProjectModal('246845579')">
+          <span class="idx-col idx-no">09</span>
+          <span class="idx-col idx-title"><strong>ANIMATING SARASWATI</strong></span>
+          <span class="idx-col idx-disc">Motion Graphics & Animation</span>
+          <span class="idx-col idx-client">Digital Narrative Experiment</span>
+          <span class="idx-col idx-year">2024</span>
+          <span class="idx-col idx-action">EXPLORE ↗</span>
+        </div>
+
+        <div class="index-row" data-preview="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/a62d79246182939.69be59cde5141.jpg" onclick="openProjectModal('246182939')">
+          <span class="idx-col idx-no">10</span>
+          <span class="idx-col idx-title"><strong>PERFUME STORE</strong></span>
+          <span class="idx-col idx-disc">Spatial Design & 3D Interiors</span>
+          <span class="idx-col idx-client">Retail Concept</span>
+          <span class="idx-col idx-year">2024</span>
+          <span class="idx-col idx-action">EXPLORE ↗</span>
+        </div>
+
+        <div class="index-row" data-preview="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/18b81d247354035.Y3JvcCwxMzgwLDEwODAsMjcwLDA.png" onclick="openProjectModal('247354035')">
+          <span class="idx-col idx-no">11</span>
+          <span class="idx-col idx-title"><strong>GRADUATION PROJECT SHOWCASE</strong></span>
+          <span class="idx-col idx-disc">Editorial Curation & Identity</span>
+          <span class="idx-col idx-client">NIFT Kannur</span>
+          <span class="idx-col idx-year">2026</span>
+          <span class="idx-col idx-action">EXPLORE ↗</span>
+        </div>
+
+        <div class="index-row" data-preview="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/15e82c205525637.66bc848ecc879.jpg" onclick="openProjectModal('205525637')">
+          <span class="idx-col idx-no">12</span>
+          <span class="idx-col idx-title"><strong>WINDUP CLOCK IN 3D</strong></span>
+          <span class="idx-col idx-disc">3D Mechanical Asset Modeling</span>
+          <span class="idx-col idx-client">Prop Archaeology Study</span>
+          <span class="idx-col idx-year">2024</span>
+          <span class="idx-col idx-action">EXPLORE ↗</span>
+        </div>
+
+        <div class="index-row" data-preview="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/225b5e102717997.5f3cfc731983e.png" onclick="openProjectModal('102717997')">
+          <span class="idx-col idx-no">13</span>
+          <span class="idx-col idx-title"><strong>KERALA ARCHIVE</strong></span>
+          <span class="idx-col idx-disc">Visual Storytelling & Regional Study</span>
+          <span class="idx-col idx-client">Archival Monograph</span>
+          <span class="idx-col idx-year">2023</span>
+          <span class="idx-col idx-action">EXPLORE ↗</span>
+        </div>
+      </div>
+
+      <!-- Floating Kinetic Hover Preview in Index View -->
+      <div class="floating-preview" id="floatingPreview">
+        <img src="" alt="Live Hover Preview" id="floatingImg">
+      </div>
+    </div><!-- End Index View -->
+
+  </section><!-- End Projects Section -->
+
+
+  <!-- ==================== EXPERIENCE SECTION ==================== -->
+  <section class="section experience-section" id="experience">
+    <div class="experience-section-header">
+      <div class="experience-header-inner">
+        <h2 class="experience-heading">Experience & Academic Practice</h2>
+      </div>
+    </div>
+
+    <div class="experience-container">
+      <div class="experience-timeline">
+        
+        <!-- Experience Item 01 -->
+        <!-- Experience Item 01: NIFT Kannur -->
+        <div class="timeline-row">
+          <div class="timeline-meta">
+            <span class="timeline-period">2023 — 2027</span>
+            <span class="timeline-type">EDUCATION</span>
+          </div>
+          <div class="timeline-body">
+            <h3 class="timeline-role">Bachelor of Design (B.Des) — Fashion Communication</h3>
+            <div class="timeline-org">National Institute of Fashion Technology (NIFT), Kannur</div>
+            <p class="timeline-desc">
+              Specializing in visual direction, 3D spatial worldbuilding, narrative cinematography, publication design, and craft ethnography. Rigorous studio practice spanning visual ergonomics, typography, branding, and contemporary digital narratives.
+            </p>
+            <div class="timeline-tags">
+              <span class="tool-tag-sm">Fashion Communication</span>
+              <span class="tool-tag-sm">Visual Direction</span>
+              <span class="tool-tag-sm">NIFT Kannur</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience Item 02: High School -->
+        <div class="timeline-row">
+          <div class="timeline-meta">
+            <span class="timeline-period">2020 — 2022</span>
+            <span class="timeline-type">HIGHER SECONDARY</span>
+          </div>
+          <div class="timeline-body">
+            <h3 class="timeline-role">Plus Two in Computer Science</h3>
+            <div class="timeline-org">St. Joseph’s Higher Secondary School, Mathilakam</div>
+            <p class="timeline-desc">
+              Foundational coursework in computer science, logic design, programming fundamentals, and mathematics.
+            </p>
+            <div class="timeline-tags">
+              <span class="tool-tag-sm">Computer Science</span>
+              <span class="tool-tag-sm">Mathematics</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience Item 03: Craft Research -->
+        <div class="timeline-row">
+          <div class="timeline-meta">
+            <span class="timeline-period">2025</span>
+            <span class="timeline-type">CRAFT RESEARCH & FIELDWORK</span>
+          </div>
+          <div class="timeline-body">
+            <h3 class="timeline-role">Lead Field Researcher & Monograph Archivist — Ezhakal</h3>
+            <div class="timeline-org">Paravur Handloom Co-operative Society // Kerala, India</div>
+            <p class="timeline-desc">
+              Conducted comprehensive ethnographic field documentation of the indigenous Paravur handloom weaving tradition. Directed documentary moving images, photographed manual loom mechanics, and authored the curated print publication monograph <em>Ezhakal</em>.
+            </p>
+            <div class="timeline-tags">
+              <span class="tool-tag-sm">Ethnographic Research</span>
+              <span class="tool-tag-sm">Publication Design</span>
+              <span class="tool-tag-sm">Documentary Film</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience Item 04: Film -->
+        <div class="timeline-row">
+          <div class="timeline-meta">
+            <span class="timeline-period">2025</span>
+            <span class="timeline-type">FILM & CINEMATOGRAPHY</span>
+          </div>
+          <div class="timeline-body">
+            <h3 class="timeline-role">Cinematographer & Director — Somewhere Between Us</h3>
+            <div class="timeline-org">Narrative Short Film Production</div>
+            <p class="timeline-desc">
+              Directed and shot a suspense narrative short film exploring temporal loops, claustrophobic night-time pacing, and micro-budget cinematography. Engineered low-key lighting setups, soundscape pacing, and tension sequencing.
+            </p>
+            <div class="timeline-tags">
+              <span class="tool-tag-sm">Cinematography</span>
+              <span class="tool-tag-sm">Film Direction</span>
+              <span class="tool-tag-sm">Sound Design</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience Item 05: Extracurricular Leadership -->
+        <div class="timeline-row">
+          <div class="timeline-meta">
+            <span class="timeline-period">2023 — PRESENT</span>
+            <span class="timeline-type">LEADERSHIP & CAMPUS</span>
+          </div>
+          <div class="timeline-body">
+            <h3 class="timeline-role">Media Team Member & Fest Volunteer</h3>
+            <div class="timeline-org">NIFT Kannur Spectrum & Cultural Events</div>
+            <p class="timeline-desc">
+              Core member of the official NIFT Kannur Social Media Team. Active volunteer for annual college cultural showcases and the Spectrum 2023 festival onwards.
+            </p>
+            <div class="timeline-tags">
+              <span class="tool-tag-sm">Social Media Team</span>
+              <span class="tool-tag-sm">Spectrum Volunteer</span>
+              <span class="tool-tag-sm">Event Coordination</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT SECTION ==================== -->
+  <section class="section contact-section" id="contact">
+    <div class="contact-section-header">
+      <div class="contact-header-inner">
+        <h2 class="contact-heading">Contact & Inquiries</h2>
+      </div>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-main">
+        <p class="contact-headline">
+          Available for select visual direction projects, 3D spatial commissions, and Graduation Project opportunities.
+        </p>
+        <div class="contact-action-row">
+          <a href="mailto:hpkuttan@gmail.com" class="contact-primary-btn" data-cursor="EMAIL">
+            <span>hpkuttan@gmail.com</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </a>
+          <button class="contact-copy-btn" id="copyEmailBtn" data-email="hpkuttan@gmail.com">
+            <span id="copyBtnText">COPY EMAIL</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="contact-sidebar">
+        <div class="contact-detail-card">
+          <span class="detail-label">STUDIO & HOMETOWN</span>
+          <p class="detail-val">NIFT Kannur, Dharmashala, Kerala</p>
+          <span class="detail-sub">Perinjanam, Thrissur, Kerala — PIN: 680686</span>
+        </div>
+
+        <div class="contact-detail-card">
+          <span class="detail-label">DIRECT CHANNELS & PROFILES</span>
+          <div class="contact-channels">
+            <a href="https://www.behance.net/harikuttan" target="_blank" rel="noopener" class="channel-link">
+              <span>Behance / harikuttan</span>
+              <span>↗</span>
+            </a>
+            <a href="https://www.linkedin.com/in/hariprakash-kannamkulath/" target="_blank" rel="noopener" class="channel-link">
+              <span>LinkedIn / hariprakash-kannamkulath</span>
+              <span>↗</span>
+            </a>
+            <a href="tel:+919447693240" class="channel-link">
+              <span>Phone / +91-9447693240</span>
+              <span>↗</span>
+            </a>
+            <a href="assets/Hariprakash_Resume.pdf" download="Hariprakash_Resume.pdf" class="channel-link">
+              <span>Curriculum Vitae (PDF)</span>
+              <span>↓</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- ==================== EDITORIAL PROJECT EXPLORE FULL-PAGE VIEW ==================== -->
+  <div class="project-modal" id="projectModal">
+    <div class="modal-window" id="modalWindow">
+      <!-- Full Page Sticky Navigation Bar -->
+      <div class="modal-nav-bar">
+        <button class="modal-nav-back" onclick="closeProjectModal()" data-cursor="BACK">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          <span>BACK TO PORTFOLIO</span>
+        </button>
+
+        <div class="modal-nav-center">
+          <span class="modal-nav-brand">HARIPRAKASH // PROJECT CASE STUDY</span>
+        </div>
+
+        <button class="modal-nav-close" onclick="closeProjectModal()" data-cursor="CLOSE">
+          <span>CLOSE</span>
+          <span class="modal-esc-tag">ESC</span>
+          <span class="modal-close-cross">✕</span>
+        </button>
+      </div>
+
+      <!-- Centered Full-Page Content Wrapper -->
+      <div class="modal-container">
+        <div class="modal-content" id="modalContent">
+          <!-- Injected via JavaScript dynamically -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer with Location Prominently Displayed -->
+  <footer class="footer">
+    <div class="footer-left">
+      <span class="footer-copy">© 2026 HARIPRAKASH. ALL RIGHTS RESERVED.</span>
+      <span class="footer-sep">/</span>
+      <span class="footer-inst">FASHION COMMUNICATION — NIFT KANNUR</span>
+    </div>
+    <div class="footer-center">
+      <span class="footer-location">PERINJANAM, THRISSUR / NIFT KANNUR, KERALA — 680686</span>
+    </div>
+    <div class="footer-right">
+      <a href="#hero" class="back-top-btn">BACK TO TOP ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
