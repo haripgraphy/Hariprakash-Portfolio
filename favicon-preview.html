@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favicon Variations — Hariprakash Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0d0d0d;
+      --card-bg: #161616;
+      --border: rgba(255, 255, 255, 0.12);
+      --text: #f5f5f5;
+      --text-muted: #888888;
+      --royal-red: #c41e26;
+      --royal-red-light: #e0323a;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding: 40px 20px 80px;
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    header {
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .brand-tag {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--royal-red-light);
+      display: inline-block;
+      margin-bottom: 8px;
+    }
+
+    h1 {
+      font-size: clamp(1.8rem, 3.2vw, 2.6rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 12px;
+    }
+
+    p.subtitle {
+      color: var(--text-muted);
+      font-size: 15px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+      margin-top: 36px;
+    }
+
+    .icon-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      transition: transform 0.25s ease, border-color 0.25s ease;
+      position: relative;
+    }
+
+    .icon-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--royal-red);
+    }
+
+    .card-badge {
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--royal-red-light);
+      background: rgba(196, 30, 38, 0.12);
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(196, 30, 38, 0.3);
+    }
+
+    .icon-display-stage {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #080808;
+      border-radius: 12px;
+      padding: 30px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .icon-hero-img {
+      width: 128px;
+      height: 128px;
+      border-radius: 28px;
+      box-shadow: 0 16px 32px rgba(0, 0, 0, 0.6);
+      object-fit: cover;
+    }
+
+    .icon-meta {
+      flex: 1;
+    }
+
+    .icon-title {
+      font-size: 17px;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: #ffffff;
+    }
+
+    .icon-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+
+    .scales-preview {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+    }
+
+    .scale-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .scale-label {
+      font-size: 10px;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .tab-simulator {
+      margin-top: 16px;
+      background: #1e1e1e;
+      border-radius: 8px 8px 0 0;
+      padding: 8px 12px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11px;
+      color: #cccccc;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-bottom: none;
+    }
+
+    .tab-icon {
+      width: 16px;
+      height: 16px;
+      border-radius: 3px;
+    }
+
+    .choose-btn {
+      width: 100%;
+      padding: 12px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid var(--border);
+      color: #ffffff;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+    }
+
+    .choose-btn:hover {
+      background: var(--royal-red);
+      border-color: var(--royal-red);
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <span class="brand-tag">HARIPRAKASH — BRAND ASSETS</span>
+      <h1>Favicon & App Icon Variations</h1>
+      <p class="subtitle">Pick the variation you like best. Each icon is designed to look razor-sharp at full app size down to tiny 16×16 browser tab sizes.</p>
+    </header>
+
+    <div class="grid">
+
+      <!-- VARIATION 01 -->
+      <div class="icon-card">
+        <span class="card-badge">Option 01</span>
+        <div class="icon-display-stage">
+          <img src="assets/favicons/favicon-1-h-monogram.svg" alt="Option 01" class="icon-hero-img">
+        </div>
+        <div class="icon-meta">
+          <h2 class="icon-title">Architectural "H" (Royal Red)</h2>
+          <p class="icon-desc">Bold architectural letterform with high crossbar on signature Royal Red gradient squircle with red pip accent.</p>
+          
+          <div class="scales-preview">
+            <div class="scale-box">
+              <img src="assets/favicons/favicon-1-h-monogram.svg" width="64" height="64" style="border-radius: 14px;">
+              <span class="scale-label">64px</span>
+            </div>
+            <div class="scale-box">
+              <img src="assets/favicons/favicon-1-h-monogram.svg" width="32" height="32" style="border-radius: 7px;">
+              <span class="scale-label">32px</span>
+            </div>
+            <div class="scale-box">
+              <img src="assets/favicons/favicon-1-h-monogram.svg" width="16" height="16" style="border-radius: 3px;">
+              <span class="scale-label">16px</span>
+            </div>
+          </div>
+
+          <div class="tab-simulator">
+            <img src="assets/favicons/favicon-1-h-monogram.svg" class="tab-icon">
+            <span>Hariprakash — Fashion Communication</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- VARIATION 02 -->
+      <div class="icon-card">
+        <span class="card-badge">Option 02</span>
+        <div class="icon-display-stage">
+          <img src="assets/favicons/favicon-2-hk-ligature.svg" alt="Option 02" class="icon-hero-img">
+        </div>
+        <div class="icon-meta">
+          <h2 class="icon-title">Interlocking "HK" Ligature</h2>
+          <p class="icon-desc">Modern brutalist luxury fashion monogram merging 'H' and 'K' in obsidian black, white, and Royal Red.</p>
+          
+          <div class="scales-preview">
+            <div class="scale-box">
+              <img src="assets/favicons/favicon-2-hk-ligature.svg" width="64" height="64" style="border-radius: 14px;">
+              <span class="scale-label">64px</span>
+            </div>
+            <div class="scale-box">
+              <img src="assets/favicons/favicon-2-hk-ligature.svg" width="32" height="32" style="border-radius: 7px;">
+              <span class="scale-label">32px</span>
+            </div>
+            <div class="scale-box">
+              <img src="assets/favicons/favicon-2-hk-ligature.svg" width="16" height="16" style="border-radius: 3px;">
+              <span class="scale-label">16px</span>
+            </div>
+          </div>
+
+          <div class="tab-simulator">
+            <img src="assets/favicons/favicon-2-hk-ligature.svg" class="tab-icon">
+            <span>Hariprakash — Fashion Communication</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- VARIATION 03 -->
+      <div class="icon-card">
+        <span class="card-badge">Option 03</span>
+        <div class="icon-display-stage">
+          <img src="assets/favicons/favicon-3-wireframe-cube.svg" alt="Option 03" class="icon-hero-img">
+        </div>
+        <div class="icon-meta">
+          <h2 class="icon-title">3D Spatial Coordinate Cube</h2>
+          <p class="icon-desc">Precision isometric wireframe cube representing Blender 3D worldbuilding, spatial design, and digital form.</p>
+          
+          <div class="scales-preview">
+            <div class="scale-box">
+              <img src="assets/favicons/favicon-3-wireframe-cube.svg" width="64" height="64" style="border-radius: 14px;">
+              <span class="scale-label">64px</span>
+            </div>
+            <div class="scale-box">
+              <img src="assets/favicons/favicon-3-wireframe-cube.svg" width="32" height="32" style="border-radius: 7px;">
+              <span class="scale-label">32px</span>
+            </div>
+            <div class="scale-box">
+              <img src="assets/favicons/favicon-3-wireframe-cube.svg" width="16" height="16" style="border-radius: 3px;">
+              <span class="scale-label">16px</span>
+            </div>
+          </div>
+
+          <div class="tab-simulator">
+            <img src="assets/favicons/favicon-3-wireframe-cube.svg" class="tab-icon">
+            <span>Hariprakash — Fashion Communication</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- VARIATION 04 -->
+      <div class="icon-card">
+        <span class="card-badge">Option 04</span>
+        <div class="icon-display-stage">
+          <img src="assets/favicons/favicon-4-cinematic-aperture.svg" alt="Option 04" class="icon-hero-img">
+        </div>
+        <div class="icon-meta">
+          <h2 class="icon-title">Cinematic Aperture & Viewfinder</h2>
+          <p class="icon-desc">Camera viewfinder framing brackets with center aperture ring in Royal Red, symbolizing cinematography and lens craft.</p>
+          
+          <div class="scales-preview">
+            <div class="scale-box">
+              <img src="assets/favicons/favicon-4-cinematic-aperture.svg" width="64" height="64" style="border-radius: 14px;">
+              <span class="scale-label">64px</span>
+            </div>
+            <div class="scale-box">
+              <img src="assets/favicons/favicon-4-cinematic-aperture.svg" width="32" height="32" style="border-radius: 7px;">
+              <span class="scale-label">32px</span>
+            </div>
+            <div class="scale-box">
+              <img src="assets/favicons/favicon-4-cinematic-aperture.svg" width="16" height="16" style="border-radius: 3px;">
+              <span class="scale-label">16px</span>
+            </div>
+          </div>
+
+          <div class="tab-simulator">
+            <img src="assets/favicons/favicon-4-cinematic-aperture.svg" class="tab-icon">
+            <span>Hariprakash — Fashion Communication</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- VARIATION 05 -->
+      <div class="icon-card">
+        <span class="card-badge">Option 05</span>
+        <div class="icon-display-stage">
+          <img src="assets/favicons/favicon-5-editorial-sparkle.svg" alt="Option 05" class="icon-hero-img">
+        </div>
+        <div class="icon-meta">
+          <h2 class="icon-title">Editorial Starburst (✦ Specimen)</h2>
+          <p class="icon-desc">The portfolio's signature 4-point sparkle mark on deep Royal Red. Minimalist, artistic, and directly recognizable.</p>
+          
+          <div class="scales-preview">
+            <div class="scale-box">
+              <img src="assets/favicons/favicon-5-editorial-sparkle.svg" width="64" height="64" style="border-radius: 14px;">
+              <span class="scale-label">64px</span>
+            </div>
+            <div class="scale-box">
+              <img src="assets/favicons/favicon-5-editorial-sparkle.svg" width="32" height="32" style="border-radius: 7px;">
+              <span class="scale-label">32px</span>
+            </div>
+            <div class="scale-box">
+              <img src="assets/favicons/favicon-5-editorial-sparkle.svg" width="16" height="16" style="border-radius: 3px;">
+              <span class="scale-label">16px</span>
+            </div>
+          </div>
+
+          <div class="tab-simulator">
+            <img src="assets/favicons/favicon-5-editorial-sparkle.svg" class="tab-icon">
+            <span>Hariprakash — Fashion Communication</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- VARIATION 06 -->
+      <div class="icon-card">
+        <span class="card-badge">Option 06</span>
+        <div class="icon-display-stage" style="background: #ffffff;">
+          <img src="assets/favicons/favicon-6-monochrome-minimal.svg" alt="Option 06" class="icon-hero-img" style="box-shadow: 0 16px 32px rgba(0,0,0,0.12);">
+        </div>
+        <div class="icon-meta">
+          <h2 class="icon-title">Stark Swiss Minimalist (White Base)</h2>
+          <p class="icon-desc">High-contrast white background with clean black architectural 'H' and Royal Red crossbar. Extreme legibility in dark browser tabs.</p>
+          
+          <div class="scales-preview">
+            <div class="scale-box">
+              <img src="assets/favicons/favicon-6-monochrome-minimal.svg" width="64" height="64" style="border-radius: 14px;">
+              <span class="scale-label">64px</span>
+            </div>
+            <div class="scale-box">
+              <img src="assets/favicons/favicon-6-monochrome-minimal.svg" width="32" height="32" style="border-radius: 7px;">
+              <span class="scale-label">32px</span>
+            </div>
+            <div class="scale-box">
+              <img src="assets/favicons/favicon-6-monochrome-minimal.svg" width="16" height="16" style="border-radius: 3px;">
+              <span class="scale-label">16px</span>
+            </div>
+          </div>
+
+          <div class="tab-simulator">
+            <img src="assets/favicons/favicon-6-monochrome-minimal.svg" class="tab-icon">
+            <span>Hariprakash — Fashion Communication</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- VARIATION 07 -->
+      <div class="icon-card">
+        <span class="card-badge">Option 07</span>
+        <div class="icon-display-stage">
+          <img src="assets/favicons/favicon-7-3d-rendered-monogram.jpg" alt="Option 07" class="icon-hero-img">
+        </div>
+        <div class="icon-meta">
+          <h2 class="icon-title">3D Rendered Metallic HP Monogram</h2>
+          <p class="icon-desc">Photorealistic 3D rendered brutalist monogram in faceted Royal Red and satin metallic finish on matte obsidian.</p>
+          
+          <div class="scales-preview">
+            <div class="scale-box">
+              <img src="assets/favicons/favicon-7-3d-rendered-monogram.jpg" width="64" height="64" style="border-radius: 14px;">
+              <span class="scale-label">64px</span>
+            </div>
+            <div class="scale-box">
+              <img src="assets/favicons/favicon-7-3d-rendered-monogram.jpg" width="32" height="32" style="border-radius: 7px;">
+              <span class="scale-label">32px</span>
+            </div>
+            <div class="scale-box">
+              <img src="assets/favicons/favicon-7-3d-rendered-monogram.jpg" width="16" height="16" style="border-radius: 3px;">
+              <span class="scale-label">16px</span>
+            </div>
+          </div>
+
+          <div class="tab-simulator">
+            <img src="assets/favicons/favicon-7-3d-rendered-monogram.jpg" class="tab-icon">
+            <span>Hariprakash — Fashion Communication</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

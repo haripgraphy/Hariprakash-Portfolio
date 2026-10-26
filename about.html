@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff" id="metaThemeColor">
+  <title>About — Hariprakash | Fashion Communication & 3D Spatial Design</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="theme-light">
+
+  <!-- Subtle Paper Grain -->
+  <div class="grain-overlay"></div>
+
+  <!-- Top Navigation Bar: Minimalist Translucent Header -->
+  <header class="header">
+    <div class="header-left">
+      <!-- Mobile Hamburger Menu Button (Shown on Phone, on the Left) -->
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger-box">
+          <span class="hamburger-line line-top"></span>
+          <span class="hamburger-line line-mid"></span>
+          <span class="hamburger-line line-bot"></span>
+        </span>
+      </button>
+
+      <a href="index.html#hero" class="brand-link">
+        <span class="brand-name">HARIPRAKASH</span>
+      </a>
+    </div>
+
+    <!-- Desktop Navigation Links (Hidden on Phone/Mobile) -->
+    <nav class="header-nav" id="headerNav">
+      <a href="index.html#hero" class="nav-link">Home</a>
+      <a href="index.html#projects" class="nav-link">Projects</a>
+      <a href="index.html#experience" class="nav-link">Experience</a>
+      <a href="index.html#contact" class="nav-link">Contact</a>
+      <a href="about.html" class="nav-link active">About</a>
+    </nav>
+
+    <div class="header-right">
+      <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle theme" title="Toggle theme (System / Dark / Light)">
+        <span class="theme-icon-moon" aria-hidden="true">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </span>
+        <span class="theme-icon-sun" aria-hidden="true">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </span>
+      </button>
+
+      <a href="assets/Hariprakash_Resume.pdf" download="Hariprakash_Resume.pdf" class="resume-download-btn" id="resumeDownloadBtn">
+        <span class="resume-btn-label">Resume</span>
+        <svg class="resume-btn-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="7 10 12 15 17 10"></polyline>
+          <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <!-- Full-Screen Mobile Navigation Drawer -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-hidden="true">
+    <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
+    <div class="mobile-nav-panel">
+      <div class="mobile-nav-header">
+        <span class="mobile-nav-brand">HARIPRAKASH</span>
+        <button class="mobile-nav-close-btn" id="mobileNavCloseBtn" aria-label="Close menu">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="mobile-nav-menu">
+        <a href="index.html#hero" class="mobile-menu-link">
+          <div class="menu-link-main">
+            <span class="menu-link-icon-wrap" aria-hidden="true">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
+            </span>
+            <span class="menu-link-text">Home</span>
+          </div>
+          <span class="menu-link-arrow" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </span>
+        </a>
+
+        <a href="index.html#projects" class="mobile-menu-link">
+          <div class="menu-link-main">
+            <span class="menu-link-icon-wrap" aria-hidden="true">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="7" height="7"></rect>
+                <rect x="14" y="3" width="7" height="7"></rect>
+                <rect x="14" y="14" width="7" height="7"></rect>
+                <rect x="3" y="14" width="7" height="7"></rect>
+              </svg>
+            </span>
+            <span class="menu-link-text">Projects</span>
+          </div>
+          <span class="menu-link-arrow" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </span>
+        </a>
+
+        <a href="index.html#experience" class="mobile-menu-link">
+          <div class="menu-link-main">
+            <span class="menu-link-icon-wrap" aria-hidden="true">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+            </span>
+            <span class="menu-link-text">Experience</span>
+          </div>
+          <span class="menu-link-arrow" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </span>
+        </a>
+
+        <a href="index.html#contact" class="mobile-menu-link">
+          <div class="menu-link-main">
+            <span class="menu-link-icon-wrap" aria-hidden="true">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </span>
+            <span class="menu-link-text">Contact</span>
+          </div>
+          <span class="menu-link-arrow" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </span>
+        </a>
+
+        <a href="about.html" class="mobile-menu-link active">
+          <div class="menu-link-main">
+            <span class="menu-link-icon-wrap" aria-hidden="true">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="7" r="4"></circle>
+                <path d="M5.5 21a6.5 6.5 0 0 1 13 0"></path>
+              </svg>
+            </span>
+            <span class="menu-link-text">About & Archive</span>
+          </div>
+          <span class="menu-link-arrow" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </span>
+        </a>
+      </nav>
+
+      <div class="mobile-nav-footer">
+        <div class="mobile-nav-info">
+          <span class="mobile-nav-inst">FASHION COMMUNICATION — NIFT KANNUR</span>
+          <a href="mailto:hpkuttan@gmail.com" class="mobile-nav-email">hpkuttan@gmail.com ↗</a>
+        </div>
+        <div class="mobile-nav-actions">
+          <a href="https://www.behance.net/harikuttan" target="_blank" rel="noopener" class="mobile-subtle-link">Behance ↗</a>
+          <span class="sub-sep">•</span>
+          <a href="https://www.linkedin.com/in/hariprakash-kannamkulath/" target="_blank" rel="noopener" class="mobile-subtle-link">LinkedIn ↗</a>
+          <span class="sub-sep">•</span>
+          <a href="assets/Hariprakash_Resume.pdf" download="Hariprakash_Resume.pdf" class="mobile-subtle-link">Resume ↓</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Editorial Visual Storytelling: Top Collage (Hari's Photos) + Content & Antiques Section -->
+  <main id="mainContent">
+    <section class="section about-page-section">
+
+      <!-- ======================================================================
+           1. TOP COLLAGE: FULL-WIDTH SCATTERED DESK (HARI'S PHOTOS ONLY)
+           ====================================================================== -->
+      <div class="about-top-collage-section">
+        <div class="interactive-collage-stage top-collage-stage" id="interactiveCollageStage">
+
+          <!-- PHOTO 01: Royal Enfield - Machines with too many screws -->
+          <div class="collage-card top-card-1" data-depth="0.05" title="Vintage Royal Enfield // Machines with too many screws">
+            <div class="collage-card-inner">
+              <img src="assets/about-royal-enfield.jpg" alt="Vintage Royal Enfield - Hari" class="collage-img">
+            </div>
+          </div>
+
+          <!-- PHOTO 02: Elephant Sculpture Workshop Build -->
+          <div class="collage-card top-card-2" data-depth="0.08" title="Workshop & Fest Sculpture Build // Hands-on Making">
+            <div class="collage-card-inner">
+              <img src="assets/about-elephant-sculpture.jpg" alt="Handcrafted Elephant Sculpture - Workshop Build" class="collage-img">
+            </div>
+          </div>
+
+          <!-- PHOTO 03: Mountain Camp Expedition -->
+          <div class="collage-card top-card-3" data-depth="0.06" title="Outdoor Mountain Highlands & Tent Camp">
+            <div class="collage-card-inner">
+              <img src="assets/about-mountain-camp.jpg" alt="Mountain Camp Expedition - Hari" class="collage-img">
+            </div>
+          </div>
+
+          <!-- PHOTO 04: Candid Road Drive -->
+          <div class="collage-card top-card-4" data-depth="0.09" title="Spontaneous Frames // Taking photos nobody asked for">
+            <div class="collage-card-inner">
+              <img src="assets/about-candid-drive.jpg" alt="Candid Road Shot - Hari" class="collage-img">
+            </div>
+          </div>
+
+          <!-- PHOTO 05: Kerala Tradition & Courtyard -->
+          <div class="collage-card top-card-5" data-depth="0.04" title="Kerala Roots // Ancestral Courtyard">
+            <div class="collage-card-inner">
+              <img src="assets/about-kerala-tradition.jpg" alt="Traditional Kurta at Courtyard Home - Hari" class="collage-img">
+            </div>
+          </div>
+
+        </div><!-- End top-collage-stage -->
+      </div><!-- End about-top-collage-section -->
+
+
+      <!-- ======================================================================
+           2. CONTENT SECTION: DIRECT STORY (LEFT) + ANTIQUES COLLAGE (RIGHT)
+           ====================================================================== -->
+      <div class="about-content-section" id="aboutContentSection">
+
+        <!-- ==================== LEFT COLUMN: DIRECT STORY ==================== -->
+        <div class="about-direct-story-col">
+          <div class="about-direct-story">
+
+            <p class="about-lead-p story-reveal-item">
+              Hey, I’m Hari. Hari to the outside world, Thakkudu to pretty much everyone in college. I study Fashion Communication at NIFT Kannur, but honestly, you’ll probably find me somewhere other than the classroom.
+            </p>
+
+            <p class="story-reveal-item">
+              You’ll usually find me in a workshop, digging through an antique store, fixing something that probably should’ve been replaced years ago, or taking photos of things nobody asked me to photograph.
+            </p>
+
+            <p class="story-reveal-item">
+              I like old things, weird things, machines with too many screws, and figuring out how stuff works. I spend my time between making things, breaking things (sometimes accidentally), and getting unnecessarily invested in things that catch my interest.
+            </p>
+
+            <p class="story-reveal-item">
+              If I’m interested in something, yeah bro, you’re safe. I’ll probably spend the next few hours talking about it, researching it, or trying to build it myself.
+            </p>
+
+            <p class="story-reveal-item">
+              This website is basically a collection of stuff I like, stuff I make, and photos I take along the way.
+            </p>
+
+            <p class="about-direct-signoff story-reveal-item">
+              Anyway, have a look around. :))
+            </p>
+
+            <!-- Quick Direct Contact & Links -->
+            <div class="about-direct-actions">
+              <a href="mailto:hpkuttan@gmail.com" class="contact-primary-btn" data-cursor="EMAIL">
+                <span>say hi → hpkuttan@gmail.com</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+
+              <div class="about-sub-links">
+                <a href="https://www.behance.net/harikuttan" target="_blank" rel="noopener" class="subtle-link">BEHANCE ↗</a>
+                <span class="sub-sep">•</span>
+                <a href="https://www.linkedin.com/in/hariprakash-kannamkulath/" target="_blank" rel="noopener" class="subtle-link">LINKEDIN ↗</a>
+                <span class="sub-sep">•</span>
+                <a href="tel:+919447693240" class="subtle-link">+91 9447693240 ↗</a>
+                <span class="sub-sep">•</span>
+                <a href="assets/Hariprakash_Resume.pdf" download="Hariprakash_Resume.pdf" class="subtle-link">RESUME (PDF) ↓</a>
+              </div>
+
+              <div class="about-back-box">
+                <a href="index.html#projects" class="editorial-back-link">
+                  <span>← Back to Selected Projects</span>
+                </a>
+              </div>
+            </div>
+
+          </div><!-- End about-direct-story -->
+        </div><!-- End about-direct-story-col -->
+
+
+        <!-- ==================== RIGHT COLUMN: ANTIQUES & SKILLS COLLAGE ==================== -->
+        <div class="about-antiques-col">
+
+          <!-- Antiques Interactive Canvas Stage -->
+          <div class="interactive-collage-stage antiques-collage-stage" id="antiquesCollageStage">
+
+            <!-- ANTIQUE 01: Vintage Remington & Brother Typewriters -->
+            <div class="collage-card antique-card-1" data-depth="0.06" title="Vintage Typewriters // Remington 20 & Brother Super Deluxe">
+              <div class="collage-card-inner">
+                <img src="assets/about-antique-typewriters.jpg" alt="Vintage Remington and Brother Typewriters" class="collage-img">
+              </div>
+            </div>
+
+            <!-- ANTIQUE 02: Brass Horn Gramophone & Vinyl -->
+            <div class="collage-card antique-card-2" data-depth="0.09" title="Vintage Brass Horn Gramophone & Vinyl Records">
+              <div class="collage-card-inner">
+                <img src="assets/about-gramophone-vinyl.jpg" alt="Vintage Brass Horn Gramophone and Hari" class="collage-img">
+              </div>
+            </div>
+
+            <!-- ANTIQUE 03: Antique Clockwork Mechanism & Brass Gears -->
+            <div class="collage-card antique-card-3" data-depth="0.05" title="Antique Clockwork Mechanism // Brass Gears & Pendulum Escapement">
+              <div class="collage-card-inner">
+                <img src="assets/about-antique-clockwork.jpg" alt="Antique Pendulum Clockwork Gears and Mechanism" class="collage-img">
+              </div>
+            </div>
+
+            <!-- ANTIQUE 04: Retro Boombox & Cassette Tapes -->
+            <div class="collage-card antique-card-4" data-depth="0.08" title="Retro Boombox & Cassette Tape Archive">
+              <div class="collage-card-inner">
+                <img src="assets/about-retro-boombox.jpg" alt="Vintage Boombox and Cassette Tapes Stack" class="collage-img">
+              </div>
+            </div>
+
+            <!-- ANTIQUE 05: Workshop Scooter Tear-Down & Repair -->
+            <div class="collage-card antique-card-5" data-depth="0.07" title="Workshop // Hands-on Scooter Tear-Down & Mechanical Repair">
+              <div class="collage-card-inner">
+                <img src="assets/about-workshop-repair.jpg" alt="Workshop Scooter Tear-Down and Repair" class="collage-img">
+              </div>
+            </div>
+
+          </div><!-- End antiquesCollageStage -->
+        </div><!-- End about-antiques-col -->
+
+      </div><!-- End about-content-section -->
+
+    </section>
+  </main>
+
+  <!-- Footer with Location Prominently Displayed in Royal Red -->
+  <footer class="footer">
+    <div class="footer-left">
+      <span class="footer-copy">© 2026 HARIPRAKASH. ALL RIGHTS RESERVED.</span>
+      <span class="footer-sep">/</span>
+      <span class="footer-inst">FASHION COMMUNICATION — NIFT KANNUR</span>
+    </div>
+    <div class="footer-center">
+      <span class="footer-location">PERINJANAM, THRISSUR / NIFT KANNUR, KERALA — 680686</span>
+    </div>
+    <div class="footer-right">
+      <a href="#mainContent" class="back-top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">BACK TO TOP ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
